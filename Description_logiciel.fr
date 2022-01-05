@@ -1025,6 +1025,9 @@ CD_GEEKBENCH="Benchmark en CLI pour tester les performances CPU mono-core et mul
 CA_GIT="Git"
 CD_GIT="Le plus célèbre des gestionnaire de sources distribués (DVCS)."
 
+CA_GITFLOW="Git-Flow"
+CD_GITFLOW="Extension de Git permettant une meilleure utilisation de celui-ci"
+
 CA_HTOP="Htop"
 CD_HTOP="Commande top amélioré."
 

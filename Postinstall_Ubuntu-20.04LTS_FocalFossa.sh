@@ -36,36 +36,36 @@ then
 	f_action_install "$CA_GNOMESUPPLEMENT" "chrome-gnome-shell gnome-firmware gnome-tweak-tool gconf-editor gnome-shell-extension-prefs"
     
     	# Sessions
-    	f_action_install "$CA_GNOMEVANILLA" gnome-session
-    	f_action_install "$CA_GNOMECLASSIC" gnome-shell-extensions
-    	f_action_install "$CA_GNOMEFLASHBACKM" gnome-session-flashback
-    	f_action_install "$CA_GNOMEFLASHBACKC" "gnome-session-flashback compiz compizconfig-settings-manager compiz-plugins compiz-plugins-extra"
+    	#f_action_install "$CA_GNOMEVANILLA" gnome-session
+    	#f_action_install "$CA_GNOMECLASSIC" gnome-shell-extensions
+    	#f_action_install "$CA_GNOMEFLASHBACKM" gnome-session-flashback
+    	#f_action_install "$CA_GNOMEFLASHBACKC" "gnome-session-flashback compiz compizconfig-settings-manager compiz-plugins compiz-plugins-extra"
    	
 	# Navigateurs
-    	f_action_snap_install "$CA_BEAKER" beaker-browser
-    	f_RepositoryExt_Install "$CA_BRAVE" "brave-browser-release" "https://brave-browser-apt-release.s3.brave.com/brave-core.asc" "[arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" "brave-browser"
+    	#f_action_snap_install "$CA_BEAKER" beaker-browser
+    	#f_RepositoryExt_Install "$CA_BRAVE" "brave-browser-release" "https://brave-browser-apt-release.s3.brave.com/brave-core.asc" "[arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" "brave-browser"
     	f_action_flatpak_install "$CA_CHROMIUM" org.chromium.Chromium
-	f_action_exec "$CA_CHROMIUMBETA" "wget https://raw.githubusercontent.com/simbd/ConfigFiles/master/chromium-beta.pref && sudo mv chro*.pref /etc/apt/preferences.d/ && sudo apt update" #(Pour ne pas que le snap prenne le dessus)
-	f_action_ppa_install "$CA_CHROMIUMBETA" ppa:saiarcot895/chromium-beta "chromium-browser"
-    	f_action_snap_install "$CA_CLIQZ" "cliqz --beta"
-    	f_action_install "$CA_DILLO" dillo
-    	f_action_flatpak_install "$CA_EOLIE" org.gnome.Eolie
-    	f_action_install "$CA_FALKON" falkon
-   	f_action_ppa_install "$CA_FIREFOXBETA" ppa:mozillateam/firefox-next "firefox firefox-locale-fr"
-   	f_action_LinInstall "$CA_FIREFOXDEVELOPER" FirefoxDeveloperEdition
-   	f_action_ppa_install "$CA_FIREFOXESR" ppa:mozillateam/ppa "firefox-esr firefox-esr-locale-fr"
-   	f_action_ppa_install "$CA_FIREFOXNIGHTLY" ppa:ubuntu-mozilla-daily/ppa "firefox-trunk firefox-trunk-locale-fr"
-    	f_action_install "$CA_EPIPHANY" epiphany-browser	
+	#f_action_exec "$CA_CHROMIUMBETA" "wget https://raw.githubusercontent.com/simbd/ConfigFiles/master/chromium-beta.pref && sudo mv chro*.pref /etc/apt/preferences.d/ && sudo apt update" #(Pour ne pas que le snap prenne le dessus)
+	#f_action_ppa_install "$CA_CHROMIUMBETA" ppa:saiarcot895/chromium-beta "chromium-browser"
+    #	f_action_snap_install "$CA_CLIQZ" "cliqz --beta"
+    #	f_action_install "$CA_DILLO" dillo
+   # 	f_action_flatpak_install "$CA_EOLIE" org.gnome.Eolie
+   # 	f_action_install "$CA_FALKON" falkon
+   #	f_action_ppa_install "$CA_FIREFOXBETA" ppa:mozillateam/firefox-next "firefox firefox-locale-fr"
+   #	f_action_LinInstall "$CA_FIREFOXDEVELOPER" FirefoxDeveloperEdition
+   #	f_action_ppa_install "$CA_FIREFOXESR" ppa:mozillateam/ppa "firefox-esr firefox-esr-locale-fr"
+   #	f_action_ppa_install "$CA_FIREFOXNIGHTLY" ppa:ubuntu-mozilla-daily/ppa "firefox-trunk firefox-trunk-locale-fr"
+   # 	f_action_install "$CA_EPIPHANY" epiphany-browser	
     	f_RepositoryExt_Install "$CA_CHROME" "google-chrome" "https://dl-ssl.google.com/linux/linux_signing_key.pub" "[arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" "google-chrome-stable"
-    	f_action_install "$CA_LYNX" lynx
-	f_action_get "$CA_EDGE" "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_93.0.916.1-1_amd64.deb"
-	f_action_install "$CA_MIDORI" midori
-    	f_action_snap_install "$CA_OPERA" opera
-	f_RepositoryExt_Install "$CA_PALEMOON" "home:stevenpusser" "https://download.opensuse.org/repositories/home:stevenpusser/xUbuntu_19.10/Release.key" "http://download.opensuse.org/repositories/home:/stevenpusser/xUbuntu_19.10/ /" "palemoon"
-    	f_action_get "$CA_SRWAREIRON" "http://www.srware.net/downloads/iron64.deb"
-    	f_action_install "$CA_TORBROWSER" torbrowser-launcher  
-    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_4.0.2312.33-1_amd64.deb" #(Dépot vivaldi auto-ajouté donc soft toujours à jour)
-	f_action_exec "$CA_VIVALDI" "sudo apt update && sudo apt upgrade vivaldi-stable -y" #Pour que  vivaldi soit à jour dès le départ
+   # 	f_action_install "$CA_LYNX" lynx
+#	f_action_get "$CA_EDGE" "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_93.0.916.1-1_amd64.deb"
+#	f_action_install "$CA_MIDORI" midori
+#    	f_action_snap_install "$CA_OPERA" opera
+#	f_RepositoryExt_Install "$CA_PALEMOON" "home:stevenpusser" "https://download.opensuse.org/repositories/home:stevenpusser/xUbuntu_19.10/Release.key" "http://download.opensuse.org/repositories/home:/stevenpusser/xUbuntu_19.10/ /" "palemoon"
+#    	f_action_get "$CA_SRWAREIRON" "http://www.srware.net/downloads/iron64.deb"
+#    	f_action_install "$CA_TORBROWSER" torbrowser-launcher  
+#    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_4.0.2312.33-1_amd64.deb" #(Dépot vivaldi auto-ajouté donc soft toujours à jour)
+#	f_action_exec "$CA_VIVALDI" "sudo apt update && sudo apt upgrade vivaldi-stable -y" #Pour que  vivaldi soit à jour dès le départ
 	
     	# Internet / Tchat / Messagerie / Téléchargement / Contrôle à distance
     	# (Section re-divisé en 3 parties cf Zenity_default_choice.sh)
@@ -388,6 +388,7 @@ then
 	f_action_install "$CA_DDRESCUE" gddrescue
 	f_action_install "$CA_FD" fd-find	
 	f_action_install "$CA_GIT" git
+	f_action_install "$CA_GITFLOW" git-flow
 	f_action_install "$CA_HTOP" htop
 	f_action_LinInstall "$CA_GEEKBENCH" Geekbench
 	f_action_install "$CA_GLANCES" glances

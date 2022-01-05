@@ -67,6 +67,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
     	$(chkDef "TRUE") "$CA_TILIX" "$CD_TILIX" \
 	FALSE "$SCT_UTILITAIRES_CLI" "===========================================================" \
 	$(chkDef "TRUE") "$CA_GIT" "$CD_GIT" \
+	$(chkDef "TRUE") "$CA_GITFLOW" "$CD_GITFLOW" \
 	$(chkDef "TRUE") "$CA_HTOP" "$CD_HTOP" \
 	FALSE "$SCT_RESEAUSECURITE" "===========================================================" \
 	FALSE "$SCT_GAMING" "===========================================================" \
