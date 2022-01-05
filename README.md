@@ -26,7 +26,7 @@ En ligne de commande, le script peut être lancé de la manière suivante :
 
 > wget https://github.com/sedoo/Ubuntu_SEDOO_PostInstall/archive/master.zip &&
 > unzip master.zip && 
-> cd Ubuntu_SEDOO_PostInstall-master/ && chmod +x Postinstall*sh &&
+> cd Ubuntu_SEDOO_PostInstall-master/ && chmod +x PostInstall*sh &&
 > ./Ubuntu_SEDOO_PostInstall.sh
 
 ## Futures évolutions
