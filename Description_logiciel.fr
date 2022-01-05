@@ -1314,7 +1314,10 @@ CA_JAVA="Java 16 JRE {PPA}"
 CD_JAVA="Version propriétaire de Java d'Oracle (JRE) en version 16 pour vos applications Java"
 
 CA_JAVAOPENJDK8="Java OpenJDK 8 (JRE+JDK)"
-CD_JAVAOPENJDK8="Ancienne version d'OpenJDK, peut être utile pour certains vieux softs/vieilles map Minecraft)"
+CD_JAVAOPENJDK8="Version de Java utilisée sur SEDUR et TWODOO"
+
+CA_MAVEN="Maven"
+CD_MAVEN="Outil de construction associé à Java"
 
 CA_JAVAOPENJDK="Java OpenJDK 16 (JRE+JDK)"
 CD_JAVAOPENJDK="Implémentation opensource de Java 16, installera le JRE (Execution d'appli Java) et le JDK (Développement)"

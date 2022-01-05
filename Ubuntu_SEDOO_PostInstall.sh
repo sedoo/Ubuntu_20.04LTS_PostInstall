@@ -495,6 +495,7 @@ then
 	f_action_exec "$CA_JAVA" "echo oracle-java16-installer shared/accepted-oracle-license-v1-2 select true | sudo /usr/bin/debconf-set-selections"
 	f_action_install "$CA_JAVA" oracle-java16-installer
 	f_action_install "$CA_JAVAOPENJDK8" "openjdk-8-jdk openjdk-8-jre"
+	f_action_install "$CA_MAVEN" "maven"
 	f_action_install "$CA_JAVAOPENJDK" "openjdk-16-jdk openjdk-16-jre"
 	f_action_install "$CA_JUPYTER" "jupyter-notebook jupyter-client jupyter-console"
 	f_action_install "$CA_LATEXFULL" "texlive-full fonts-freefont-ttf texlive-extra-utils texlive-fonts-extra texlive-lang-french texlive-latex-extra libreoffice-texmaths"

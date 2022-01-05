@@ -74,6 +74,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	FALSE "$SCT_DEV" "===========================================================" \
 	$(chkDef "TRUE") "$CA_ECLIPSE" "$CD_ECLIPSE" \
 	$(chkDef "TRUE") "$CA_JAVAOPENJDK8" "$CD_JAVAOPENJDK8" \
+	$(chkDef "TRUE") "$CA_MAVEN" "$CD_MAVEN" \
 	$(chkDef "TRUE") "$CA_VSCODE" "$CD_VSCODE" \
 	$(chkDef "TRUE") "$CA_NODES" "$CD_NODES" \
 	$(chkDef "TRUE") "$CA_NPM" "$CD_NPM" \
