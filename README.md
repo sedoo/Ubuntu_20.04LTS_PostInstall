@@ -35,9 +35,9 @@ Il y a 2 méthodes :
 
 - Télécharger le contenu du script (répertoire Ubuntu_20.04LTS_PostInstall) sur ce github (soit par l'interface web soit via la commande wget), décompresser le contenu, penser à mettre le droit d'execution sur le script et lancer le "Postinstall" à l'intérieur SANS sudo (les sudo se trouvent à l'intérieur du script). En ligne de commande, cela donne donc :
 
-> wget https://github.com/simbd/Ubuntu_20.04LTS_PostInstall/archive/master.zip &&
-> unzip master.zip && 
-> cd Ubuntu_20.04LTS_PostInstall-master/ && chmod +x Postinstall*sh &&
+> wget https://github.com/sedoo/Ubuntu_20.04LTS_PostInstall/archive/develop.zip &&
+> unzip develop.zip && 
+> cd Ubuntu_20.04LTS_PostInstall-develop/ && chmod +x Postinstall*sh &&
 > ./Postinstall_Ubuntu-20.04LTS_FocalFossa.sh
 
 - 2ème solution : faire avec git clone (avec l'avantage de pouvoir faire la maj du script sans le retélécharger manuellement). Il vous faudra en pré-requis avoir installé git (sudo apt install git).
