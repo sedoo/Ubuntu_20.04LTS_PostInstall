@@ -74,6 +74,8 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "TRUE") "$CA_ECLIPSE" "$CD_ECLIPSE" \
 	$(chkDef "TRUE") "$CA_JAVAOPENJDK8" "$CD_JAVAOPENJDK8" \
 	$(chkDef "TRUE") "$CA_VSCODE" "$CD_VSCODE" \
+	$(chkDef "TRUE") "$CA_NODES" "$CD_NODES" \
+	$(chkDef "TRUE") "$CA_NPM" "$CD_NPM" \
 	FALSE "$SCT_OPTIMISATION" "===========================================================" \
 	$(chkDef "TRUE") "$CA_APPORTOFF" "$CD_APPORTOFF" \
 	$(chkDef "TRUE") "$CA_FOLDERCOLOR" "$CD_FOLDERCOLOR" \
