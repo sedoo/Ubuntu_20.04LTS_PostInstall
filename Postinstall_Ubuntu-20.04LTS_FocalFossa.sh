@@ -515,6 +515,9 @@ then
 	f_action_install "$CA_VSCODE" apt-transport-https #dépendance
 	f_action_get "$CA_VSCODIUM" "https://github.com/VSCodium/vscodium/releases/download/1.52.1/codium_1.52.1-1608165473_amd64.deb"
 
+	f_action_install "$CA_NODES" "nodejs"
+	f_action_install "$CA_NPM" "npm"
+
 	# Divers, Customisation et Optimisation
 	f_action_install "$CA_SAMBANFS" "samba-common nfs-common"
 	f_action_install "$CA_IMPRIMANTE" "hplip hplip-doc hplip-gui sane sane-utils"

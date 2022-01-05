@@ -1361,6 +1361,12 @@ CD_VIM="Editeur de texte très puissant avec du contenu supplémentaire pour cet
 CA_VSCODE="Visual Studio Code"
 CD_VSCODE="Développé par Microsoft, sous licence libre MIT"
 
+CA_NODES="Nodes"
+CD_NODES="Framework de développement Javascript"
+
+CA_NPM="Npm"
+CD_NPM="Gestionnaire de paquets associé à Nodes"
+
 CA_VSCODIUM="VSCodium"
 CD_VSCODIUM="Fork de VisualStudio mais sans les merdouilles propriétaires de MS dedans pour faire du tracking / télémétrie"
 
