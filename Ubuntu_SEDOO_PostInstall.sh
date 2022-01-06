@@ -384,6 +384,7 @@ then
 	f_action_install "$CA_VARIETY" variety
 	
 	# Utilitaires en CLI
+	f_action_install "$CA_NANO" nano
 	f_action_install "$CA_ASCIINEMA" asciinema
 	f_action_install "$CA_DDRESCUE" gddrescue
 	f_action_install "$CA_FD" fd-find	

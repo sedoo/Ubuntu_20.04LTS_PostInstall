@@ -1013,6 +1013,9 @@ SCT_UTILITAIRES_CLI="______ [[ UTILITAIRES EN CLI ]] ______"
 CA_ASCIINEMA="Asciinema"
 CD_ASCIINEMA="Permet d'enregistrer & partager le contenu de votre terminal par ex pour une démo en ligne de commande"
 
+CA_NANO="Nano"
+CD_NANO="Editeur minimaliste"
+
 CA_DDRESCUE="DDRescue"
 CD_DDRESCUE="Permet de dupliquer le mieux possible les parties intactes des disques usagés"
 
