@@ -1,0 +1,56 @@
+#!/bin/bash
+
+if [ "$UID" -ne "0" ]
+then
+  echo "Merci de lancer le script avec le droit admin => sudo ./SedooInstall_....."
+  exit 
+fi 
+
+# Placement dans le répertoire /tmp
+cd /tmp
+
+# Installation via snap
+snap install --classic eclipse
+
+# Ajout dépot & clé
+
+wget https://projectlombok.org/downloads/lombok.jar
+
+SUDO_USER_HOME=$( getent passwd $SUDO_USER | cut -d: -f6 )
+SUDO_USER_GROUP=$(id -gn $SUDO_USER)
+SEDOO_ECLIPSE_DIR=$SUDO_USER_HOME/.sedooeclipse
+
+
+mkdir -p $SEDOO_ECLIPSE_DIR
+
+mv ./lombok.jar $SEDOO_ECLIPSE_DIR
+ cp /snap/eclipse/48/eclipse.ini $SEDOO_ECLIPSE_DIR
+ 
+echo "-javaagent:$SEDOO_ECLIPSE_DIR/lombok.jar" >> $SEDOO_ECLIPSE_DIR/eclipse.ini  
+
+chown -R $SUDO_USER:$SUDO_USER_GROUP $SEDOO_ECLIPSE_DIR
+
+SHORTCUT_FOLDER=$SUDO_USER_HOME/.local/share/applications
+
+mkdir -p $SHORTCUT_FOLDER
+
+SHORTCUT_FILE=$SHORTCUT_FOLDER/eclipse_sedoo.desktop
+
+rm -f $SHORTCUT_FILE
+
+touch $SHORTCUT_FILE
+chown -R $SUDO_USER:$SUDO_USER_GROUP $SHORTCUT_FILE
+echo "[Desktop Entry]" >> $SHORTCUT_FILE
+echo "X-SnapInstanceName=eclipse" >> $SHORTCUT_FILE
+echo "Version=1.0" >> $SHORTCUT_FILE
+echo "Type=Application" >> $SHORTCUT_FILE
+echo "Name=Eclipse Sedoo" >> $SHORTCUT_FILE
+echo "Icon=/snap/eclipse/48/icon.xpm" >> $SHORTCUT_FILE
+echo "Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/eclipse_eclipse.desktop /snap/bin/eclipse --launcher.ini $SEDOO_ECLIPSE_DIR/eclipse.ini %U" >> $SHORTCUT_FILE
+echo "Categories=Development;IDE;" >> $SHORTCUT_FILE
+echo "Terminal=false" >> $SHORTCUT_FILE
+echo "Comment=Eclipse IDE" >> $SHORTCUT_FILE
+echo "StartupWMClass=eclipse" >> $SHORTCUT_FILE
+
+
+

@@ -154,6 +154,14 @@ f_action_LinInstall() {
 	fi
 }
 
+f_action_SedooInstall() {
+	if [[ "$GUI" == *"$1"* ]]
+	then
+		wget https://gitlab.com/sedoo/Ubuntu_SEDOO_PostInstall/raw/master/LinInstall_"$2" --no-check-certificate
+		chmod +x LinInstall_"$2" ; sudo ./LinInstall_"$2" ; rm LinInstall_"$2"
+	fi
+}
+
 # Installation automatisé à partir de dépot externe de l'éditeur avec clé ajouté
 f_RepositoryExt_Install() {
 	if [[ "$GUI" == *"$1"* ]]
