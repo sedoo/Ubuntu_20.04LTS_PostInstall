@@ -484,7 +484,7 @@ then
 	f_action_get "$CA_BLUEGRIFFON" "http://bluegriffon.org/freshmeat/3.1/bluegriffon-3.1.Ubuntu18.04-x86_64.deb"
 	f_action_snap_install "$CA_BRACKETS" "brackets --classic"
 	f_action_install "$CA_CODEBLOCKS" "codeblocks codeblocks-contrib"
-	f_action_SedooInstall "$CA_ECLIPSE"
+	f_action_SedooInstall "$CA_ECLIPSE" Eclipse
 	f_action_install "$CA_EMACS" emacs
 	f_action_install "$CA_ERIC" eric
 	f_action_LinInstall "$CA_GDEVELOP" Gdevelop
