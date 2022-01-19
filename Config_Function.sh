@@ -157,7 +157,7 @@ f_action_LinInstall() {
 f_action_SedooInstall() {
 	if [[ "$GUI" == *"$1"* ]]
 	then
-		wget https://gitlab.com/sedoo/Ubuntu_SEDOO_PostInstall/raw/master/LinInstall_"$2" --no-check-certificate
+		wget https://gitlab.com/sedoo/Ubuntu_SEDOO_PostInstall/raw/master/scripts/SedooInstall"$2" --no-check-certificate
 		chmod +x LinInstall_"$2" ; sudo ./LinInstall_"$2" ; rm LinInstall_"$2"
 	fi
 }
