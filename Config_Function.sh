@@ -157,6 +157,8 @@ f_action_LinInstall() {
 f_action_SedooInstall() {
 	if [[ "$GUI" == *"$1"* ]]
 	then
+		echo "Coucou"
+		pwd
 		chmod +x ./scripts/SedooInstall"$2" ; sudo ./scripts/SedooInstall"$2" ; 
 	fi
 }
