@@ -158,7 +158,7 @@ f_action_SedooInstall() {
 	if [[ "$GUI" == *"$1"* ]]
 	then
 		wget https://raw.githubusercontent.com/sedoo/Ubuntu_SEDOO_PostInstall/master/scripts/SedooInstall"$2"
-		chmod +x SedooInstall"$2" ; sudo SedooInstall"$2" ; rm SedooInstall"$2"
+		chmod +x SedooInstall"$2" ; sudo ./SedooInstall"$2" ; rm SedooInstall"$2"
 	fi
 }
 
