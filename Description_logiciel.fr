@@ -1289,7 +1289,7 @@ CD_BRACKETS="Editeur opensource d'Adobe pour le web design et dev web HTML, CSS,
 CA_CODEBLOCKS="CodeBlocks"
 CD_CODEBLOCKS="IDE spécialisé pour les langages C/C++"
 
-CA_ECLIPSE="Eclipse {SNAP}"
+CA_ECLIPSE="Eclipse {SEDOO}"
 CD_ECLIPSE="Environnement de production de logiciels libre extensible s'appuyant principalement sur Java"
 
 CA_EMACS="Emacs"
