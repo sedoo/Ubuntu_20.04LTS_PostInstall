@@ -35,7 +35,6 @@ Les évolutions suivantes sont prévues:
 
 - Amélioration de l'IHM
 - Création de la clé SSH du USER
-- Installation de Postman
 - Installation Z 
 - Installation de Zsh si possible (cf. compatibilité)
 - Installation Mongo / Mongo3T

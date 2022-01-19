@@ -1292,6 +1292,9 @@ CD_CODEBLOCKS="IDE spécialisé pour les langages C/C++"
 CA_ECLIPSE="Eclipse {SEDOO}"
 CD_ECLIPSE="Environnement de production de logiciels libre extensible s'appuyant principalement sur Java"
 
+CA_POSTMAN="Postman {SNAP}"
+CD_POSTMAN="Emetteur de requête REST"
+
 CA_EMACS="Emacs"
 CD_EMACS="Le couteau suisse des éditeurs de texte, il fait tout mais il est complexe"
 

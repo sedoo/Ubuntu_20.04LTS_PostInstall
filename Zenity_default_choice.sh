@@ -73,6 +73,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	FALSE "$SCT_RESEAUSECURITE" "===========================================================" \
 	FALSE "$SCT_GAMING" "===========================================================" \
 	FALSE "$SCT_DEV" "===========================================================" \
+	$(chkDef "TRUE") "$CA_POSTMAN" "$CD_POSTMAN" \
 	$(chkDef "TRUE") "$CA_ECLIPSE" "$CD_ECLIPSE" \
 	$(chkDef "TRUE") "$CA_JAVAOPENJDK8" "$CD_JAVAOPENJDK8" \
 	$(chkDef "TRUE") "$CA_MAVEN" "$CD_MAVEN" \
