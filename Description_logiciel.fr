@@ -1295,6 +1295,9 @@ CD_ECLIPSE="Environnement de production de logiciels libre extensible s'appuyant
 CA_POSTMAN="Postman {SNAP}"
 CD_POSTMAN="Emetteur de requête REST"
 
+CA_ROBO3T="Robo 3T {SNAP}"
+CD_ROBO3T="Interface MongoDB"
+
 CA_EMACS="Emacs"
 CD_EMACS="Le couteau suisse des éditeurs de texte, il fait tout mais il est complexe"
 

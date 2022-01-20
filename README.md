@@ -37,7 +37,7 @@ Les évolutions suivantes sont prévues:
 - Création de la clé SSH du USER
 - Installation Z 
 - Installation de Zsh si possible (cf. compatibilité)
-- Installation Mongo / Mongo3T
+- Installation Mongo
 - Extensions Gnome
 - Configuration par défaut de certains outils (ex: raccourcis Zsh, raccourci Gnome, config Git...)
 

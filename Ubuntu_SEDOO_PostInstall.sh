@@ -487,6 +487,7 @@ then
 	f_action_install "$CA_CODEBLOCKS" "codeblocks codeblocks-contrib"
 	f_action_SedooInstall "$CA_ECLIPSE" Eclipse
 	f_action_install "$CA_EMACS" emacs
+	f_action_snap_install "$CA_ROBO3T" "robo3t-snap"
 	f_action_install "$CA_ERIC" eric
 	f_action_LinInstall "$CA_GDEVELOP" Gdevelop
 	f_action_install "$CA_GEANY" "geany geany-plugins"
